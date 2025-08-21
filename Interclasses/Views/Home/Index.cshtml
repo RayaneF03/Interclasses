@@ -1,8 +1,57 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Página Inicial";
 }
+<style>
+	body {
+		background-color: #E8F7FF
+	}
+</style>
+<div class="container py-5">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<div class="text-center mb-5">
+		<h1 class="display-4 fw-bold"><i class="bi bi-suit-heart"></i> Interclasses</h1>
+		<p class="lead text-muted">Gerencie seus times de uma forma simples e eficiente!</p>
+		<a asp-controller="Tarefas" asp-action="Index" class="btn btn-outline-dark btn-lg btn-sm btn-">Ver Os Times</a>
+	</div>
+
+
+	<div class="row text-center">
+
+
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+					<i class="bi bi-plus-circle display-4 text-primary mb-3"></i>
+					<h5>Adicionar um novo time</h5>
+					<p class="card-text text-muted">Adicione seu novo time, para não perder nenhum campeonato</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+					<i class="bi bi-check-circle display-4 text-success mb-3"></i>
+					<h5>Pontuação dos times</h5>
+					<p class="card-text text-muted">Marque os pontos de todos os times, para organizar sua vitória!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-4 mb-4">
+
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+					<i class="bi bi-trash display-4 text-danger mb-3"></i>
+					<h5>Excluir suas marcação</h5>
+					<p class="card-text text-muted">Exclua algumas marcações que foram feitos de maneira errada.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
